@@ -1,0 +1,9 @@
+<h1>KarolineApp</h1>
+<a [routerLink]="['/currency']">Cotações</a> | 
+<a [routerLink]="['/wallet']">Carteira</a> | 
+<span *ngIf="wallet.diff>0" style="color:green">↑</span>
+<span *ngIf="wallet.diff<0" style="color:red">↓</span>
+<hr/>
+<router-outlet></router-outlet>
+<hr/>
+Karoline Teodoro da Silva | RA: 0050831921012 | <a href="https://github.com/kateodoros">GitHub</a>
